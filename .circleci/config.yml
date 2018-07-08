@@ -1,0 +1,12 @@
+version: 2
+
+jobs:
+  validate_terraform:
+    docker:
+      - image: hashicorp/terraform
+    steps:
+      - checkout
+      - run:
+          name: Validate Terraform Formatting
+          command: "[ -z \"$(terraform fmt -write=false)\" ] || { terraform fmt -write=false -diff; exit 1;}"
+          
