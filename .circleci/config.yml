@@ -10,3 +10,8 @@ jobs:
           name: Validate Terraform Formatting
           command: "[ -z \"$(terraform fmt -write=false)\" ] || { terraform fmt -write=false -diff; exit 1;}"
           
+workflows:
+  version: 2
+  validate:
+    jobs:
+      - validate_terraform
