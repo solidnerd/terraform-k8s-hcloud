@@ -13,7 +13,7 @@ Pin-Priority: 1000
 apt-get install -qq -y kubectl
 
 # Initialize Cluster
-kubeadm init --feature-gates CoreDNS=$CORE_DNS
+kubeadm init --feature-gates CoreDNS="$CORE_DNS"
 
 systemctl enable docker kubelet
 
