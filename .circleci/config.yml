@@ -13,7 +13,7 @@ jobs:
             find . -type f -name '*.sh' | xargs shellcheck --external-sources
   validate_terraform:
     docker:
-      - image: hashicorp/terraform
+      - image: hashicorp/terraform:0.11.7
     steps:
       - checkout
       - run:
