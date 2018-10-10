@@ -35,11 +35,11 @@ variable "ssh_public_key" {
 }
 
 variable "docker_version" {
-  default = "17.03"
+  default = "18.06"
 }
 
 variable "kubernetes_version" {
-  default = "1.10.0"
+  default = "1.12.0"
 }
 
 variable "core_dns" {
