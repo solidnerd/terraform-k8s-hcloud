@@ -18,7 +18,9 @@ $ ./install-plugin.sh
 $ terraform init
 $ terraform apply
 $ KUBECONFIG=secrets/admin.conf kubectl get nodes
-$ KUBECONFIG=secrets/admin.conf kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.7/calico.yaml
+$ KUBECONFIG=secrets/admin.conf kubectl apply -f https://docs.projectcalico.org/v3.2/getting-started/kubernetes/installation/hosted/etcd.yaml
+$ KUBECONFIG=secrets/admin.conf kubectl apply -f https://docs.projectcalico.org/v3.2/getting-started/kubernetes/installation/rbac.yaml
+$ KUBECONFIG=secrets/admin.conf kubectl apply -f https://docs.projectcalico.org/v3.2/getting-started/kubernetes/installation/hosted/calico.yaml
 $ KUBECONFIG=secrets/admin.conf kubectl get pods --namespace=kube-system -o wide
 $ KUBECONFIG=secrets/admin.conf kubectl run nginx --image=nginx
 $ KUBECONFIG=secrets/admin.conf kubectl expose deploy nginx --port=80 --type NodePort
@@ -37,8 +39,8 @@ $ KUBECONFIG=secrets/admin.conf kubectl expose deploy nginx --port=80 --type Nod
 | `node_type`              | `cx11`          | Machine type for more types have a look at https://www.hetzner.de/cloud | No       |
 | `ssh_private_key`                    | `~/.ssh/id_ed25519`    | Private Key to access the machines       |
 | `ssh_public_key`          | `~/.ssh/id_ed25519.pub`          | Public Key to authorized the access for the machines                                                     | No       |
-| `docker_version`         | `17.03`          | Docker CE version that will be installed                                                     | No       |
-| `kubernetes_version`         | `1.10.0`          | Kubernetes version that will be installed                                                     | No       |
+| `docker_version`         | `18.06`          | Docker CE version that will be installed                                                     | No       |
+| `kubernetes_version`         | `1.12.0`          | Kubernetes version that will be installed                                                     | No       |
 | `core_dns`         | `false`          | Enables CoreDNS as Service Discovery                                                     | No       |
 
 All variables cloud be passed through `environment variables` or a `tfvars` file.
