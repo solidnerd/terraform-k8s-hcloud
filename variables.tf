@@ -43,5 +43,9 @@ variable "kubernetes_version" {
 }
 
 variable "core_dns" {
-  default = "false"
+  default = false
+}
+
+variable "calico_enabled" {
+  default = false
 }
