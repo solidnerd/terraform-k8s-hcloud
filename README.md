@@ -40,7 +40,7 @@ $ KUBECONFIG=secrets/admin.conf kubectl expose deploy nginx --port=80 --type Nod
 | `ssh_private_key`                    | `~/.ssh/id_ed25519`    | Private Key to access the machines       |
 | `ssh_public_key`          | `~/.ssh/id_ed25519.pub`          | Public Key to authorized the access for the machines                                                     | No       |
 | `docker_version`         | `18.06`          | Docker CE version that will be installed                                                     | No       |
-| `kubernetes_version`         | `1.12.0`          | Kubernetes version that will be installed                                                     | No       |
+| `kubernetes_version`         | `1.12.2`          | Kubernetes version that will be installed                                                     | No       |
 | `core_dns`         | `false`          | Enables CoreDNS as Service Discovery                                                     | No       |
 
 All variables cloud be passed through `environment variables` or a `tfvars` file.
