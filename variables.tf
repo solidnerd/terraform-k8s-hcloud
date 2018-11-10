@@ -39,7 +39,7 @@ variable "docker_version" {
 }
 
 variable "kubernetes_version" {
-  default = "1.12.0"
+  default = "1.12.2"
 }
 
 variable "core_dns" {
