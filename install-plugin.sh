@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eu
-OS=${OS:-darwin}
+OS=${OS:-$(uname -s)}
 HCLOUD_VERSION=${HCLOUD_VERSION:-1.1.0}
 HCLOUD_TERRAFORM_URL=${HCLOUD_TERRAFORM_URL:-"https://github.com/hetznercloud/terraform-provider-hcloud/releases/download/v${HCLOUD_VERSION}/terraform-provider-hcloud_v${HCLOUD_VERSION}_${OS}_amd64.zip"}
 echo "Install Terraform plugin from:"
