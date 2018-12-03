@@ -6,7 +6,6 @@ This repository will help to setup an opionated Kubernetes Cluster with [kubeadm
 
 ```
 $ git clone https://github.com/solidnerd/terraform-k8s-hcloud.git
-$ ./install-plugin.sh
 $ terraform init
 $ terraform apply
 ```
@@ -14,7 +13,6 @@ $ terraform apply
 ## Example
 
 ```
-$ ./install-plugin.sh
 $ terraform init
 $ terraform apply
 $ KUBECONFIG=secrets/admin.conf kubectl get nodes
@@ -80,5 +78,5 @@ Please use the [issue tracker](https://github.com/solidnerd/terraform-k8s-hcloud
 
 
 **Tested with**
-- Terraform [v0.11.5](https://github.com/hashicorp/terraform/tree/v0.11.5)
-- provider.hcloud [v1.1.0](https://github.com/hetznercloud/terraform-provider-hcloud/tree/v1.1.0)
+- Terraform [v0.11.10](https://github.com/hashicorp/terraform/tree/v0.11.10)
+- provider.hcloud [v1.6.0](https://github.com/terraform-providers/terraform-provider-hcloud/tree/v1.6.0)
