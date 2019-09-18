@@ -40,7 +40,7 @@ resource "hcloud_server" "master" {
   }
 
   provisioner "remote-exec" {
-    inline = ["CORE_DNS=${var.core_dns} bash /root/master.sh"]
+    inline = ["FEATURE_GATES=${var.feature_gates} bash /root/master.sh"]
   }
 
   provisioner "local-exec" {
