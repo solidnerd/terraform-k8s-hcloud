@@ -38,15 +38,16 @@ variable "ssh_public_key" {
 }
 
 variable "docker_version" {
-  default = "18.06"
+  default = "19.03"
 }
 
 variable "kubernetes_version" {
-  default = "1.12.2"
+  default = "1.15.5"
 }
 
-variable "core_dns" {
-  default = false
+variable "feature_gates" {
+  description = "Add Feature Gates e.g. 'DynamicKubeletConfig=true'"
+  default     = ""
 }
 
 variable "calico_enabled" {
