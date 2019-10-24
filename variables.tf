@@ -1,6 +1,8 @@
-variable "hcloud_token" {}
+variable "hcloud_token" {
+}
 
-variable "master_count" {}
+variable "master_count" {
+}
 
 variable "master_image" {
   description = "Predefined Image that will be used to spin up the machines (Currently supported: ubuntu-16.04, debian-9,centos-7,fedora-27)"
@@ -12,7 +14,8 @@ variable "master_type" {
   default     = "cx11"
 }
 
-variable "node_count" {}
+variable "node_count" {
+}
 
 variable "node_image" {
   description = "Predefined Image that will be used to spin up the machines (Currently supported: ubuntu-16.04, debian-9,centos-7,fedora-27)"
@@ -49,3 +52,4 @@ variable "core_dns" {
 variable "calico_enabled" {
   default = false
 }
+
