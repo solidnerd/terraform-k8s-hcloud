@@ -78,5 +78,6 @@ Please use the [issue tracker](https://github.com/solidnerd/terraform-k8s-hcloud
 
 
 **Tested with**
-- Terraform [v0.11.10](https://github.com/hashicorp/terraform/tree/v0.11.10)
-- provider.hcloud [v1.6.0](https://github.com/terraform-providers/terraform-provider-hcloud/tree/v1.6.0)
+
+- Terraform [v0.12.8](https://github.com/hashicorp/terraform/tree/v0.12.8)
+- provider.hcloud [v1.12.0](https://github.com/terraform-providers/terraform-provider-hcloud)
