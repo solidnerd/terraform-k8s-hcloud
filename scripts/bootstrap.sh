@@ -8,7 +8,7 @@ Package: docker-ce
 Pin: version ${DOCKER_VERSION}.*
 Pin-Priority: 1000
 " > /etc/apt/preferences.d/docker-ce
-sleep 30
+echo -n "waiting for lock file /var/lib/apt/lists/lock to be free.. " && flock /var/lib/apt/lists/lock echo "done"
 apt-get -qq update
 apt-get -qq install -y \
     apt-transport-https \
