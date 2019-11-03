@@ -60,12 +60,12 @@ Or passing directly via Arguments
 
 ```console
 $ terraform apply \
-  -var hcloud_token="<yourgeneratedtoken>"
-  -var docker_version=17.03
-  -var kubernetes_version=1.9.6
-  -var master_type=cx21
-  -var master_count=1
-  -var node_type=cx31
+  -var hcloud_token="<yourgeneratedtoken>" \
+  -var docker_version=17.03 \
+  -var kubernetes_version=1.9.6 \
+  -var master_type=cx21 \
+  -var master_count=1 \
+  -var node_type=cx31 \
   -var node_count=2
 ```
 
