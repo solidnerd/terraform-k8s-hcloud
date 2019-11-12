@@ -11,7 +11,7 @@ variable "master_image" {
 
 variable "master_type" {
   description = "For more types have a look at https://www.hetzner.de/cloud"
-  default     = "cx11"
+  default     = "cx21"
 }
 
 variable "node_count" {
@@ -24,7 +24,7 @@ variable "node_image" {
 
 variable "node_type" {
   description = "For more types have a look at https://www.hetzner.de/cloud"
-  default     = "cx11"
+  default     = "cx21"
 }
 
 variable "ssh_private_key" {
