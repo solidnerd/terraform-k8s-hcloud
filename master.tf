@@ -37,7 +37,7 @@ resource "null_resource" "install_master" {
   }
 
   provisioner "remote-exec" {
-    inline = "FEATURE_GATES=${var.feature_gates} bash /root/master.sh"
+    inline = ["FEATURE_GATES=${var.feature_gates} bash /root/master.sh"]
   }
 
   provisioner "local-exec" {
