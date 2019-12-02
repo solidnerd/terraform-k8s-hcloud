@@ -10,6 +10,6 @@ resource "null_resource" "calico" {
     inline = ["kubectl apply -f https://docs.projectcalico.org/v3.8/manifests/calico.yaml"]
   }
 
-  depends_on = ["hcloud_server.master"]
+  depends_on = [null_resource.install_master]
 }
 

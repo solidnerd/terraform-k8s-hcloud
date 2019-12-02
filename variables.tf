@@ -51,6 +51,6 @@ variable "feature_gates" {
 }
 
 variable "calico_enabled" {
-  default = false
+  default = true
 }
 

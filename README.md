@@ -4,7 +4,7 @@ This repository will help to setup an opionated Kubernetes Cluster with [kubeadm
 
 ## Usage
 
-```
+```console
 $ git clone https://github.com/solidnerd/terraform-k8s-hcloud.git
 $ terraform init
 $ terraform apply
@@ -53,8 +53,8 @@ master_type = "cx21"
 master_count = 1
 node_type = "cx31"
 node_count = 2
-kubernetes_version = "1.9.6"
-docker_version = "17.03"
+kubernetes_version = "1.14.6"
+docker_version = "18.03"
 ```
 
 Or passing directly via Arguments
@@ -70,7 +70,6 @@ $ terraform apply \
   -var node_count=2
 ```
 
-
 ## Contributing
 
 ### Bug Reports & Feature Requests
@@ -79,6 +78,5 @@ Please use the [issue tracker](https://github.com/solidnerd/terraform-k8s-hcloud
 
 
 **Tested with**
-
 - Terraform [v0.12.8](https://github.com/hashicorp/terraform/tree/v0.12.8)
 - provider.hcloud [v1.12.0](https://github.com/terraform-providers/terraform-provider-hcloud)
