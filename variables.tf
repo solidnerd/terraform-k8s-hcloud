@@ -5,8 +5,8 @@ variable "master_count" {
 }
 
 variable "master_image" {
-  description = "Predefined Image that will be used to spin up the machines (Currently supported: ubuntu-16.04, debian-9,centos-7,fedora-27)"
-  default     = "ubuntu-16.04"
+  description = "Predefined Image that will be used to spin up the machines (Currently supported: ubuntu-20.04, ubuntu-18.04)"
+  default     = "ubuntu-20.04"
 }
 
 variable "master_type" {
@@ -18,8 +18,8 @@ variable "node_count" {
 }
 
 variable "node_image" {
-  description = "Predefined Image that will be used to spin up the machines (Currently supported: ubuntu-16.04, debian-9,centos-7,fedora-27)"
-  default     = "ubuntu-16.04"
+  description = "Predefined Image that will be used to spin up the machines (Currently supported: ubuntu-20.04, ubuntu-18.04)"
+  default     = "ubuntu-20.04"
 }
 
 variable "node_type" {
@@ -42,7 +42,7 @@ variable "docker_version" {
 }
 
 variable "kubernetes_version" {
-  default = "1.15.5"
+  default = "1.18.6"
 }
 
 variable "feature_gates" {
