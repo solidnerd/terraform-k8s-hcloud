@@ -7,7 +7,7 @@ resource "null_resource" "calico" {
   }
 
   provisioner "remote-exec" {
-    inline = ["kubectl apply -f https://docs.projectcalico.org/v3.8/manifests/calico.yaml"]
+    inline = ["kubectl apply -f https://docs.projectcalico.org/archive/v3.15/manifests/calico.yaml"]
   }
 
   depends_on = ["hcloud_server.master"]
