@@ -54,3 +54,6 @@ variable "calico_enabled" {
   default = false
 }
 
+variable "csi_driver_enabled" {
+  default = false
+}

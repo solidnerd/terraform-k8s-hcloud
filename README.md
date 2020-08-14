@@ -39,6 +39,7 @@ $ KUBECONFIG=secrets/admin.conf kubectl expose deploy nginx --port=80 --type Nod
 | `kubernetes_version`  | `1.18.6`                | Kubernetes version that will be installed                                                                                   | No  |
 | `feature_gates`       | ``                      | Add your own Feature Gates for Kubeadm                                                                                      | No  |
 | `calico_enabled`      | `false`                 | Installs Calico Network Provider after the master comes up                                                                  | No  |
+| `csi_driver_enabled`  | `false`	                | Installs [hcloud-csi driver](https://github.com/hetznercloud/csi-driver) for persistent volume support                      | No  |
 
 All variables cloud be passed through `environment variables` or a `tfvars` file.
 
